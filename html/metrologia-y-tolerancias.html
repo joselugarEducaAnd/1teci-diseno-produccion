@@ -2,16 +2,15 @@
 <html lang="es" id="exe-20260805SDA03PAGE04">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="generator" content="eXeLearning v4.0.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Metrología y tolerancias | Diseño, producción y ciclo de vida</title>
 <link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
 <meta name="description" content="Del diseño al mercado: la vida completa de un producto">
-<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260805SDA03NATIVO","packageTitle":"Diseño, producción y ciclo de vida","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
 <script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
 <script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
-<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script>
-<script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
 </head>
 <body class="exe-export exe-web-site">
 <script>document.body.className+=" js"</script>
@@ -23,17 +22,23 @@
 </li>
 <li> <a href="../html/ciclo-de-vida-fisico.html" class="no-ch">Ciclo de vida físico</a>
 </li>
-<li> <a href="../html/mejora-continua-y-ciclo-pdca.html" class="no-ch">Mejora continua y ciclo PDCA</a>
+<li> <a href="../html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
 </li>
 <li class="active"> <a href="../html/metrologia-y-tolerancias.html" class="active no-ch">Metrología y tolerancias</a>
 </li>
-<li> <a href="../html/normalizacion-y-gestion-de-la-calidad.html" class="no-ch">Normalización y gestión de la calidad</a>
+<li> <a href="../html/mejora-continua-y-ciclo-pdca.html" class="no-ch">Mejora continua y ciclo PDCA</a>
 </li>
-<li> <a href="../html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
+<li> <a href="../html/normas-mercado-y-retorno.html" class="no-ch">Normas, mercado y retorno</a>
 </li>
-<li> <a href="../html/logistica-mercado-y-auditoria.html" class="no-ch">Logística, mercado y auditoría</a>
+<li> <a href="../html/auditoria-y-repaso.html" class="no-ch">Auditoría y repaso</a>
 </li>
 <li> <a href="../html/entrega-y-prueba-individual.html" class="no-ch">Entrega y prueba individual</a>
+</li>
+<li> <a href="../html/expedientes-de-las-empresas.html" class="no-ch">Expedientes de las empresas</a>
+</li>
+<li> <a href="../html/leer-el-calibre.html" class="no-ch">Leer el calibre</a>
+</li>
+<li> <a href="../html/glosario.html" class="no-ch">Glosario</a>
 </li>
 </ul>
 </nav><main id="20260805SDA03PAGE04" class="page"> 
@@ -54,93 +59,156 @@
 .modo{border-left:6px solid;padding:.65rem .8rem;margin:1rem 0;font-weight:700;border-radius:.25rem}
 .modo-individual{border-color:#2c6fb0;background:#eef6fd;color:#174b77}
 .modo-equipo{border-color:#8a4b2a;background:#fbf2ec;color:#66351f}
-.lista-check li{margin-bottom:.35rem}
+.lista-check{list-style:none;padding-left:.2rem}
+.lista-check li{margin-bottom:.4rem}
 .fuente-oficial{font-size:.92em;border-left:4px solid #0e5a63;padding:.55rem .75rem;background:#f6f5fb}
+.hoy{border:2px solid #0e5a63;border-radius:.6rem;padding:.7rem .9rem;margin:0 0 1.2rem;background:#e6f1f2}
+.hoy p{margin:.2rem 0}
+.ejemplo{border-left:6px solid #0e5a63;background:#f4f9f9;padding:.7rem .9rem;margin:1rem 0;border-radius:.25rem}
+.ejemplo-titulo{font-weight:700;color:#084049;margin:0 0 .35rem}
+.palabras dt{font-weight:700;color:#084049;margin-top:.55rem}
+.palabras dd{margin:0 0 .2rem 0}
+.palabras dd em{color:#444}
+.tabla-scroll{max-width:100%;overflow-x:auto}
 </style>
+
+<div class="hoy"><p><strong>Hoy conseguirás:</strong> medir con el calibre, decidir con cinco medidas si un lote se acepta y planificar cómo se medirán dos características de vuestro producto.</p></div>
+
 <h2>Medir para decidir</h2>
-<p>Una medida industrial no termina en un número. Debe indicar qué se midió, con qué método,
-qué instrumento se utilizó, qué incertidumbre o limitación existe y qué decisión permite
-tomar. Medir una característica que no afecta a la función no mejora el producto.</p>
-<p style="text-align:center"><img src="../content/resources/metrologia.svg" alt="Comparación de resultados exactos y precisos con una banda de tolerancia" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="../content/resources/metrologia.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
+<p>En una fábrica no se mide por curiosidad: se mide para <strong>decidir</strong> si una
+pieza vale o no. La <strong>metrología</strong> es la ciencia de medir bien. Antes de medir
+en el taller, aprende a usar el instrumento en <a href="../html/leer-el-calibre.html">Leer el calibre</a>.</p>
 
-<h2>Conceptos esenciales</h2>
-<dl>
-  <dt><strong>Exactitud</strong></dt><dd>Proximidad entre el valor medido y el valor de referencia.</dd>
-  <dt><strong>Precisión</strong></dt><dd>Proximidad entre medidas repetidas en condiciones definidas.</dd>
-  <dt><strong>Resolución</strong></dt><dd>Menor cambio que puede mostrar el instrumento.</dd>
-  <dt><strong>Tolerancia</strong></dt><dd>Intervalo de valores que el diseño acepta para una característica.</dd>
-  <dt><strong>Calibración</strong></dt><dd>Comparación con referencias para establecer la relación entre indicación y valor, con sus incertidumbres. No significa ajustar automáticamente.</dd>
-  <dt><strong>Verificación</strong></dt><dd>Comprobación de que se cumplen requisitos especificados para el uso previsto.</dd>
-  <dt><strong>Trazabilidad metrológica</strong></dt><dd>Cadena documentada de calibraciones que relaciona un resultado con una referencia.</dd>
-</dl>
+<h2>Cinco palabras con la botella</h2>
+<p>La rosca de la boca de la botella debe medir <strong>52,00 mm</strong>. La empresa acepta
+las botellas cuya rosca mide entre <strong>51,80 y 52,20 mm</strong>: si es más gruesa, el
+tapón no entra; si es más fina, el tapón queda flojo y pierde agua.</p>
+<div class="marco marco-nota"><p class="marco-titulo">Palabras nuevas</p><dl class="palabras"><dt>Valor nominal</dt><dd>La medida que se busca. <em>52,00 mm.</em></dd><dt>Tolerancia</dt><dd>Cuánto se acepta que la medida se aparte del nominal. Se da con un mínimo y un máximo. <em>De 51,80 a 52,20 mm: 0,40 mm de ancho.</em></dd><dt>Conforme</dt><dd>Una pieza cuya medida está dentro de la tolerancia. La que se sale es <em>no conforme</em>.</dd><dt>Resolución</dt><dd>El cambio más pequeño que puede mostrar el instrumento. <em>El calibre del taller: 0,05 mm. El micrómetro (otro instrumento, para piezas pequeñas): 0,01 mm.</em></dd><dt>Exactitud y precisión</dt><dd>Exactitud: lo cerca que están las medidas del valor de verdad. Precisión: lo cerca que están unas medidas de otras cuando se repiten. Lo contrario de precisión es <em>dispersión</em>.</dd></dl></div>
+<p style="text-align:center"><img src="../content/resources/metrologia.svg" alt="Medidas precisas y exactas frente a medidas precisas pero desplazadas, con la banda de tolerancia" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="../content/resources/metrologia.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
+<p>Arriba, las medidas están juntas y en el centro: el proceso es <strong>preciso y
+exacto</strong>. Abajo, están juntas pero desplazadas: es <strong>preciso pero no exacto</strong>
+y fabrica piezas fuera de tolerancia.</p>
 
-<div class="fuente-oficial"><strong>Para contrastar:</strong> el Centro Español de Metrología
-mantiene explicaciones sobre exactitud, precisión, calibración, verificación y trazabilidad en
-<a href="https://www.cem.es/es/divulgacion/preguntas-frecuentes" target="_blank" rel="noopener">sus preguntas frecuentes</a>.</div>
+<div class="marco marco-teoria">
+  <p class="marco-titulo">Cómo se decide (reglas de esta unidad)</p>
+  <ul>
+    <li><strong>Conforme:</strong> la medida está entre el mínimo y el máximo. Si cae justo en
+    el límite, cuenta como dentro.</li>
+    <li><strong>Media</strong> = suma de las medidas ÷ número de medidas. <strong>Centrado:</strong>
+    la media se separa del nominal como mucho 1/8 del ancho de la tolerancia (rosca: 0,40 ÷ 8 =
+    0,05 mm).</li>
+    <li><strong>Rango</strong> = medida mayor − medida menor. Dice cuánta <strong>dispersión</strong>
+    hay: <em>poca</em> si el rango es como mucho la mitad del ancho de la tolerancia; <em>mucha</em>
+    si es más; <em>demasiada</em> si es mayor que el ancho entero.</li>
+    <li><strong>Lote:</strong> se <strong>acepta</strong> si todas son conformes y hay poca
+    dispersión; se <strong>revisa</strong> (se miden todas y se ajusta la máquina) si alguna no es
+    conforme o hay mucha dispersión; se <strong>rechaza</strong> si 3 o más de 5 no son conformes.</li>
+    <li><strong>Instrumento suficiente:</strong> su resolución es como mucho 1/4 del ancho de la
+    tolerancia (en la industria se busca 1/10). El calibre de 0,05 mm sirve para tolerancias de
+    0,20 mm de ancho o más.</li>
+  </ul>
+</div>
 
-<h2>Elegir instrumento y método</h2>
-<p>La resolución debe ser suficiente frente a la tolerancia, pero no tiene sentido exigir una
-precisión extrema si la función no la necesita. También importan el rango, el contacto con la
-pieza, la temperatura, la fuerza aplicada y la repetibilidad del procedimiento.</p>
-
-<table class="tabla-datos">
-  <thead><tr><th>Característica</th><th>Método posible</th><th>Decisión</th></tr></thead>
-  <tbody>
-    <tr><td>Diámetro de una boca</td><td>Calibre, varias orientaciones</td><td>Dentro/fuera de tolerancia; posible deformación</td></tr>
-    <tr><td>Masa del producto</td><td>Balanza verificada</td><td>Falta/exceso de material o componente</td></tr>
-    <tr><td>Estanqueidad</td><td>Presión o inversión durante tiempo definido</td><td>Conforme/no conforme; localizar causa</td></tr>
-  </tbody>
-</table>
-
-<h2>Explora la variación</h2>
-<p>Cambia el centro y la dispersión de las medidas. Observa que un proceso puede ser preciso
-pero estar desplazado, o estar centrado y producir demasiada dispersión.</p>
+<h2>Decidir con cinco medidas</h2>
+<div class="ejemplo"><p class="ejemplo-titulo">Cinco botellas de un lote</p>
+<p>Se miden las roscas de cinco botellas: <strong>51,95 · 52,05 · 52,10 · 51,90 · 52,25 mm</strong>.</p>
+<ol>
+  <li><strong>¿Cuántas son conformes?</strong> Todas menos 52,25 (pasa de 52,20).
+  Son 4 de 5: <strong>4 / 5 × 100 = 80 %</strong> de conformes.</li>
+  <li><strong>Media:</strong> (51,95 + 52,05 + 52,10 + 51,90 + 52,25) / 5 = 260,25 / 5 =
+  <strong>52,05 mm</strong>. Se separa 0,05 mm del nominal, justo lo que permite la regla:
+  <strong>está centrado</strong>.</li>
+  <li><strong>Rango:</strong> 52,25 − 51,90 = <strong>0,35 mm</strong>. La mitad del ancho de la
+  tolerancia es 0,20 mm: <strong>hay mucha dispersión</strong>.</li>
+  <li><strong>Decisión:</strong> una botella no es conforme y hay mucha dispersión, así que el
+  lote <strong>se revisa</strong>: se miden todas sus botellas y se ajusta la máquina de roscar.</li>
+</ol></div>
+<p>Prueba el simulador: mueve el centro y la dispersión y mira cuántas medidas quedan dentro.</p>
 <p><iframe src="../content/resources/widget_tolerancias.html" title="Simulador de medidas frente a tolerancias" style="width:100%;height:590px;border:1px solid #c3dde0;border-radius:10px" loading="lazy"></iframe></p>
-<p style="font-size:.92em">Si no aparece incrustado, <a href="../content/resources/widget_tolerancias.html" target="_blank">abre el simulador en otra pestaña</a>.</p>
+<p style="font-size:.92em">Si no aparece, <a href="../content/resources/widget_tolerancias.html" target="_blank" rel="noopener">abre el simulador en otra pestaña</a>.</p>
 
-<div class="modo modo-equipo">TRABAJO EN EQUIPO · continuad “Dosier del diseño al mercado”</div>
-<p>Definid al menos dos características críticas. Para cada una indicad mensurando,
-instrumento, resolución, tolerancia, procedimiento, frecuencia o muestra, decisión ante una
-no conformidad y cómo se asegura la trazabilidad. Evitad escribir solo «se mide».</p>
+<h2>¿Me puedo fiar del instrumento?</h2>
+<p>Un calibre puede estar desgastado y medir de más o de menos. Por eso:</p>
+<ul>
+  <li><strong>Calibrar</strong> es comparar lo que marca tu calibre con una pieza patrón cuyo
+  valor se conoce muy bien, y anotar cuánto se equivoca. Si el patrón mide 20,00 mm y tu calibre
+  marca 20,05 mm, mide 0,05 mm de más. Calibrar no es arreglarlo: arreglarlo es
+  <strong>ajustar</strong>.</li>
+  <li><strong>Verificar</strong> es comprobar si ese error es aceptable para lo que vas a medir.
+  Para la rosca (tolerancia de 0,40 mm de ancho), un error de 0,05 mm se acepta.</li>
+  <li><strong>Trazabilidad</strong> de una medida es poder demostrar con papeles que tu calibre se
+  comparó con un patrón, ese patrón con otro mejor… hasta el patrón nacional, que en España custodia
+  el Centro Español de Metrología. El papel que lo demuestra es el <strong>certificado de
+  calibración</strong>.</li>
+</ul>
+<p style="text-align:center"><img src="../content/resources/trazabilidad_escalera.svg" alt="Escalera de trazabilidad: calibre del taller, patrón del laboratorio, laboratorio acreditado y patrón nacional" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="../content/resources/trazabilidad_escalera.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
+
+<h2>Un plan de medida, resuelto</h2>
+<div class="ejemplo"><p class="ejemplo-titulo">Plan de medida de la botella</p>
+<div class="tabla-scroll"><table class="tabla-datos">
+  <thead><tr><th></th><th>Característica 1</th><th>Característica 2</th></tr></thead>
+  <tbody>
+    <tr><td>Qué se mide exactamente</td><td>Diámetro exterior de la rosca de la boca</td><td>Masa de la botella vacía con tapón</td></tr>
+    <tr><td>Valor nominal y tolerancia</td><td>52,00 mm (51,80–52,20 mm)</td><td>340 g (330–350 g)</td></tr>
+    <tr><td>Instrumento, hasta cuánto mide y resolución</td><td>Calibre de 150 mm, 0,05 mm</td><td>Balanza de 2 kg, 1 g</td></tr>
+    <tr><td>Cómo se mide, paso a paso</td><td>Cero comprobado; dos medidas girando la botella un cuarto de vuelta; se anota la mayor</td><td>Balanza a cero; botella seca y con su tapón</td></tr>
+    <tr><td>Cuántas piezas y cada cuánto</td><td>1 de cada 50</td><td>5 de cada lote</td></tr>
+    <tr><td>Qué se hace si no cumple</td><td>Se para la máquina de roscar y se revisa el lote desde la última buena</td><td>Se revisa el espesor del tubo de ese lote</td></tr>
+    <tr><td>Cómo sabemos que el instrumento es fiable</td><td>Calibración anual con certificado; cero cada mañana</td><td>Cada semana se comprueba con una pesa patrón de 500 g</td></tr>
+  </tbody>
+</table></div>
+<p><strong>Lo que puede falsear la medida:</strong> apretar demasiado el calibre; medir la botella aún caliente del horno.</p></div>
+
+<div class="modo modo-equipo">TRABAJO EN EQUIPO · en el taller y apartado 5 del dosier</div>
+<ol>
+  <li>En vuestra estación, medid las cinco piezas; cada persona mide al menos una. Anotad las
+  medidas en la <strong>ficha de estación</strong> (en papel).</li>
+  <li>Calculad cuántas son conformes y su porcentaje, la media y el rango, y decidid qué se hace
+  con el lote usando las reglas de arriba. Después copiad la tabla en el apartado 5 del dosier.</li>
+  <li><strong>Apartado 5:</strong> elegid dos características de vuestro expediente y completad
+  el plan de medida como el de la botella.</li>
+</ol>
+
+<h2>Cómo sabéis que está bien</h2><ul class="lista-check"><li>☐ Cada medida lleva su unidad y la coma decimal.</li><li>☐ La resolución del instrumento es como mucho 1/4 del ancho de la tolerancia.</li><li>☐ Cada lote termina en una decisión: se acepta, se revisa o se rechaza, con su regla.</li><li>☐ Decís cómo se demuestra que el instrumento es fiable.</li></ul>
 
 </div>
 </div>
-</article><article id="block-1785969405833-imlmn2bqe" class="box">
+</article><article id="block-1793109594171-nwa8ca4v5" class="box">
 <header class="box-head no-icon">
-<h1 class="box-title">Verdadero o falso</h1>
+<h1 class="box-title">Compruébalo</h1>
 <button class="box-toggle box-toggle-on" title="Toggle content">
 <span>Toggle content</span>
 </button></header>
 <div class="box-content">
-<div id="idevice-1785969406406-l80u7jf3g" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1785969406406-l80u7jf3g&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Decide si cada afirmación es verdadera o falsa. Usa después el simulador para observar la diferencia entre centro, dispersión y tolerancia.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;Un proceso puede ser muy preciso y, aun así, producir medidas desplazadas respecto al valor de referencia.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Sí. Las medidas pueden quedar muy juntas entre sí y, al mismo tiempo, lejos del valor de referencia.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Precisión habla de la proximidad entre medidas repetidas.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Calibrar un instrumento significa ajustarlo obligatoriamente hasta que marque el valor correcto.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;No. Calibrar es comparar con referencias y establecer la relación entre indicación y valor, con sus incertidumbres; el ajuste es otra operación.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Comparar y ajustar no son sinónimos.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;La tolerancia la fija el diseño; la resolución es una propiedad del instrumento de medida.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Correcto. La tolerancia define qué acepta el producto y la resolución indica el menor cambio que muestra el instrumento.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Pregunta qué pertenece al producto y qué pertenece al instrumento.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Si una medida cae dentro de tolerancia, ya no importa el método con el que se obtuvo.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Importa. Sin método, instrumento adecuado y trazabilidad, no sabemos si el resultado permite tomar una decisión fiable.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Un número sin condiciones de medida puede engañar.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Verificar es comprobar que se cumplen requisitos especificados para el uso previsto.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Eso es. La verificación responde a si algo cumple los requisitos definidos para su uso.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en la pregunta «¿cumple lo especificado?».&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1785969406406-l80u7jf3g&quot;}" data-idevice-template="trueorfalse.html">
+<div id="idevice-1793109593643-ycogs3yje" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1793109593643-ycogs3yje&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Decide si cada frase es verdadera o falsa. Después usa el simulador para verlo.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;Un proceso puede hacer medidas muy juntas entre sí y, aun así, fabricar piezas fuera de tolerancia.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Verdadero. Si las medidas están juntas pero desplazadas, el proceso es preciso pero no exacto.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en la figura de las medidas desplazadas.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Calibrar un calibre es arreglarlo para que marque bien.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Falso. Calibrar es compararlo con un patrón y anotar cuánto se equivoca. Arreglarlo es ajustar.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Comparar y arreglar no son lo mismo.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;La tolerancia la decide quien diseña el producto; la resolución depende del instrumento.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Verdadero. La tolerancia es del producto; la resolución, del instrumento.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Qué es del producto y qué es del instrumento?&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Si la media de cinco medidas está en el valor nominal, todas las piezas son buenas.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Falso. Hay que mirar cada medida: con que una quede fuera de tolerancia, no todas son buenas.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Repasa el ejemplo de las cinco botellas.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;El calibre del taller, de 0,05 mm, no puede dar una lectura de 18,63 mm.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Verdadero. Con 0,05 mm las lecturas terminan en 0 o en 5 centésimas.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Mira la página «Leer el calibre».&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1785313017315-5i36ev3um&quot;}" data-idevice-template="trueorfalse.html">
 <div class="exe-trueorfalse-container">
   
-    <div class="game-evaluation-ids js-hidden" data-id="idevice-1785969406406-l80u7jf3g" data-evaluationb="false" data-evaluationid=""></div>
-        <div class="TOFP-instructions"><p>Decide si cada afirmación es verdadera o falsa. Usa después el simulador para observar la diferencia entre centro, dispersión y tolerancia.</p></div>
-        <div class="TOFP-MainContainer" data-instance="idevice-1785969406406-l80u7jf3g" id="tofPMainContainer-idevice-1785969406406-l80u7jf3g">
-            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1785969406406-l80u7jf3g">
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1793109593643-ycogs3yje" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Decide si cada frase es verdadera o falsa. Después usa el simulador para verlo.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1793109593643-ycogs3yje" id="tofPMainContainer-idevice-1793109593643-ycogs3yje">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1793109593643-ycogs3yje">
                 <div class="TOFP-GameScoreBoard TOFP-EHidden">
                     <div class="TOFP-TimeNumber">
                         <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
-                        <p id="tofPPTime-idevice-1785969406406-l80u7jf3g" class="TOFP-PTime">00:00:</p>
+                        <p id="tofPPTime-idevice-1793109593643-ycogs3yje" class="TOFP-PTime">00:00:</p>
                     </div>
                 </div>
-                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1785969406406-l80u7jf3g">
-                    <div class="TOFP-Message" id="tofPMessage-idevice-1785969406406-l80u7jf3g"></div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1793109593643-ycogs3yje">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1793109593643-ycogs3yje"></div>
                 </div>
-                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1785969406406-l80u7jf3g">
-                    <button  id="tofPStartGame-idevice-1785969406406-l80u7jf3g" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1793109593643-ycogs3yje">
+                    <button  id="tofPStartGame-idevice-1793109593643-ycogs3yje" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
                 </div>
-                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1785969406406-l80u7jf3g">
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1793109593643-ycogs3yje">
                 </div>
-                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1785969406406-l80u7jf3g">
-                    <button id="tofPCheckTest-idevice-1785969406406-l80u7jf3g" type="button" class="btn btn-primary">Comprobar</button>
-                    <button id="tofRebootTest-idevice-1785969406406-l80u7jf3g" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1793109593643-ycogs3yje">
+                    <button id="tofPCheckTest-idevice-1793109593643-ycogs3yje" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1793109593643-ycogs3yje" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
                 </div>
         </div> 
         <div class="Games-BottonContainer">
             <div class="Games-GetScore">
-                <input id="tofPSendScore-idevice-1785969406406-l80u7jf3g" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+                <input id="tofPSendScore-idevice-1793109593643-ycogs3yje" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
             </div>
         </div>
         <div class="TOFP-After"></div>
@@ -151,8 +219,8 @@ no conformidad y cómo se asegura la trazabilidad. Evitad escribir solo «se mid
 </div>
 </article>
 </div></main><div class="nav-buttons">
-<a href="../html/mejora-continua-y-ciclo-pdca.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
-<a href="../html/normalizacion-y-gestion-de-la-calidad.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+<a href="../html/produccion-y-control-de-calidad.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/mejora-continua-y-ciclo-pdca.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
 </div>
 <footer id="siteFooter" class="siteFooter-empty"><div id="siteFooterContent"></div></footer>
 </div>

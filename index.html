@@ -2,15 +2,14 @@
 <html lang="es" id="exe-index">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="generator" content="eXeLearning v4.0.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diseño, producción y ciclo de vida</title>
 <link rel="icon" type="image/x-icon" href="libs/favicon.ico">
 <meta name="description" content="Del diseño al mercado: la vida completa de un producto">
-<script>document.querySelector("html").classList.add("js");</script><script src="libs/jquery/jquery.min.js"> </script><script src="libs/common_i18n.js"> </script><script src="libs/common.js"> </script><script src="libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260805SDA03NATIVO","packageTitle":"Diseño, producción y ciclo de vida","language":"es"};</script><script src="libs/xapi/exe_xapi.js"> </script><script src="libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+<script>document.querySelector("html").classList.add("js");</script><script src="libs/jquery/jquery.min.js"> </script><script src="libs/common_i18n.js"> </script><script src="libs/common.js"> </script><script src="libs/exe_export.js"> </script><script src="libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 <script src="idevices/text/text.js"></script><link rel="stylesheet" href="idevices/text/text.css">
-<link rel="stylesheet" href="content/css/base.css"><script src="theme/style.js"> </script>
-<script src="theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="theme/style.css"><link rel="stylesheet" href="theme/zzz-majuelo.css">
+<link rel="stylesheet" href="content/css/base.css"><script src="theme/style.js"> </script><script src="theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="theme/style.css"><link rel="stylesheet" href="theme/zzz-majuelo.css">
 </head>
 <body class="exe-export exe-web-site">
 <script>document.body.className+=" js"</script>
@@ -22,17 +21,23 @@
 </li>
 <li> <a href="html/ciclo-de-vida-fisico.html" class="no-ch">Ciclo de vida físico</a>
 </li>
-<li> <a href="html/mejora-continua-y-ciclo-pdca.html" class="no-ch">Mejora continua y ciclo PDCA</a>
+<li> <a href="html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
 </li>
 <li> <a href="html/metrologia-y-tolerancias.html" class="no-ch">Metrología y tolerancias</a>
 </li>
-<li> <a href="html/normalizacion-y-gestion-de-la-calidad.html" class="no-ch">Normalización y gestión de la calidad</a>
+<li> <a href="html/mejora-continua-y-ciclo-pdca.html" class="no-ch">Mejora continua y ciclo PDCA</a>
 </li>
-<li> <a href="html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
+<li> <a href="html/normas-mercado-y-retorno.html" class="no-ch">Normas, mercado y retorno</a>
 </li>
-<li> <a href="html/logistica-mercado-y-auditoria.html" class="no-ch">Logística, mercado y auditoría</a>
+<li> <a href="html/auditoria-y-repaso.html" class="no-ch">Auditoría y repaso</a>
 </li>
 <li> <a href="html/entrega-y-prueba-individual.html" class="no-ch">Entrega y prueba individual</a>
+</li>
+<li> <a href="html/expedientes-de-las-empresas.html" class="no-ch">Expedientes de las empresas</a>
+</li>
+<li> <a href="html/leer-el-calibre.html" class="no-ch">Leer el calibre</a>
+</li>
+<li> <a href="html/glosario.html" class="no-ch">Glosario</a>
 </li>
 </ul>
 </nav><main id="20260805SDA03PAGE00" class="page"> 
@@ -53,76 +58,100 @@
 .modo{border-left:6px solid;padding:.65rem .8rem;margin:1rem 0;font-weight:700;border-radius:.25rem}
 .modo-individual{border-color:#2c6fb0;background:#eef6fd;color:#174b77}
 .modo-equipo{border-color:#8a4b2a;background:#fbf2ec;color:#66351f}
-.lista-check li{margin-bottom:.35rem}
+.lista-check{list-style:none;padding-left:.2rem}
+.lista-check li{margin-bottom:.4rem}
 .fuente-oficial{font-size:.92em;border-left:4px solid #0e5a63;padding:.55rem .75rem;background:#f6f5fb}
+.hoy{border:2px solid #0e5a63;border-radius:.6rem;padding:.7rem .9rem;margin:0 0 1.2rem;background:#e6f1f2}
+.hoy p{margin:.2rem 0}
+.ejemplo{border-left:6px solid #0e5a63;background:#f4f9f9;padding:.7rem .9rem;margin:1rem 0;border-radius:.25rem}
+.ejemplo-titulo{font-weight:700;color:#084049;margin:0 0 .35rem}
+.palabras dt{font-weight:700;color:#084049;margin-top:.55rem}
+.palabras dd{margin:0 0 .2rem 0}
+.palabras dd em{color:#444}
+.tabla-scroll{max-width:100%;overflow-x:auto}
 </style>
+
 <div class="marco marco-teoria">
   <p class="marco-titulo">Un producto no empieza ni termina en la fábrica</p>
-  <p>Una botella, un bolígrafo o un taladro existen porque alguien detecta una necesidad,
-  toma decisiones de diseño, organiza recursos, fabrica, controla, transporta, vende,
-  mantiene y finalmente retira el producto. En esta unidad seguirás ese recorrido completo.</p>
+  <p>Antes de que una botella llegue a tu mochila, alguien decidió de qué material hacerla,
+  cómo fabricarla, cómo comprobar que no pierde agua y cómo llevarla hasta la tienda. Y cuando
+  la tires, alguien tendrá que decidir qué se hace con ella. En esta unidad vas a seguir ese
+  recorrido completo de un producto real.</p>
 </div>
-<p style="text-align:center"><img src="content/resources/mapa_recorrido.svg" alt="Recorrido del producto desde la necesidad hasta la recuperación de materiales" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="content/resources/mapa_recorrido.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
+<p style="text-align:center"><img src="content/resources/mapa_recorrido.svg" alt="Recorrido del producto: necesidad, diseño, producción, control, distribución, uso y retorno" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="content/resources/mapa_recorrido.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 
 <h2>El reto</h2>
-<p>Tu equipo elegirá un producto cotidiano y elaborará un <strong>dosier del diseño al
-mercado</strong>. No vais a fabricar nada: trabajaréis como un equipo de ingeniería que debe
-explicar cómo se obtiene el producto, cómo se controla, cómo llega a las personas y cómo se
-puede mejorar.</p>
+<p>Tu equipo será el <strong>departamento de producción</strong> de una empresa que fabrica
+un producto cotidiano. La empresa es inventada, pero el producto y sus normas son reales. La
+empresa os entrega un <strong>expediente</strong> con los datos que necesitáis: materiales,
+pasos de fabricación, medidas importantes, problemas de calidad, leyes que debe cumplir y qué
+pasa con el producto al tirarlo.</p>
+<p>Con ese expediente rellenaréis un <strong>dosier de nueve apartados</strong>. No vais a
+fabricar nada: vais a explicar cómo se fabrica, cómo se controla, cómo se mejora, qué exige la
+ley para venderlo y cómo llega a las personas y vuelve.</p>
+
+<h2>Los productos</h2>
+<p>Cada equipo elige uno de estos cuatro. Los ejemplos del libro usan siempre una
+<strong>botella reutilizable de acero inoxidable</strong>: verás cada apartado del dosier
+resuelto con ella antes de hacer el tuyo.</p>
+<table class="tabla-datos">
+  <thead><tr><th>Producto</th><th>Qué lo hace interesante</th></tr></thead>
+  <tbody>
+    <tr><td>Lata de bebida de aluminio</td><td>Se fabrican millones al día; casi todo es control de medidas y de fugas.</td></tr>
+    <tr><td>Bolígrafo retráctil</td><td>Muchas piezas pequeñas que tienen que encajar bien.</td></tr>
+    <tr><td>Casco de bicicleta</td><td>Protege la cabeza: la ley exige ensayos antes de venderlo.</td></tr>
+    <tr><td>Hervidor eléctrico</td><td>Lleva electricidad y agua caliente: seguridad y reciclaje de aparatos.</td></tr>
+  </tbody>
+</table>
+<p>Los cuatro expedientes están en la página <a href="html/expedientes-de-las-empresas.html">Expedientes de las empresas</a>.</p>
 
 <h2>Qué entregarás</h2>
 <div class="modo modo-equipo">TRABAJO EN EQUIPO · una sola entrega por equipo</div>
-<p><strong>Dosier del diseño al mercado.</strong> Se abre en la primera sesión, se completa
-por apartados y se entrega en Moodle al comenzar la última sesión. El archivo final se llama
+<p><strong>Dosier del diseño al mercado.</strong> Se empieza en la primera sesión, en cada sesión
+se completa la parte que indica el mapa de la unidad y se entrega en Moodle al empezar la última sesión, con el nombre
 <code>dosier_diseno_mercado.pdf</code>.</p>
-<div class="modo modo-individual">TRABAJO INDIVIDUAL · cada persona entrega el suyo</div>
-<p><strong>Bitácora individual.</strong> Tres entradas breves sobre tus fuentes, tus
-decisiones y una revisión realizada tras recibir comentarios. Se entrega en Moodle al final
-de la séptima sesión como <code>bitacora_decisiones.pdf</code>.</p>
-<p>La unidad termina con una prueba escrita individual.</p>
+<div class="modo modo-individual">TRABAJO INDIVIDUAL · cada persona entrega la suya</div>
+<p><strong>Bitácora individual.</strong> Tres entradas cortas sobre lo que has aportado tú:
+una fuente que has comprobado, una decisión que propusiste y un cambio que hiciste después de
+recibir comentarios. Se entrega en Moodle al final de la sesión de auditoría, con el nombre
+<code>bitacora_decisiones.pdf</code>.</p>
+<p>La unidad termina con una <strong>prueba escrita individual</strong> sobre un producto
+nuevo.</p>
 
 <h2>Cómo trabajar con las plantillas</h2>
 <div class="marco marco-teoria">
   <p class="marco-titulo">Crea tus copias de trabajo</p>
   <ul>
-    <li><a href="https://docs.google.com/document/d/1v1V-5rKe8rhD8UylBOfzo5cIOmLOB3M3jLWVs0PA2UI/copy" target="_blank" rel="noopener"><strong>Crear una copia del dosier del equipo</strong></a></li>
-    <li><a href="https://docs.google.com/document/d/1xAzqFE7JmX1cjCy7jcphTOMCQNhZzJboyvXFwUjrpK8/copy" target="_blank" rel="noopener"><strong>Crear una copia de la bitácora individual</strong></a></li>
+    <li><a href="https://docs.google.com/document/d/1v1V-5rKe8rhD8UylBOfzo5cIOmLOB3M3jLWVs0PA2UI/copy" target="_blank" rel="noopener"><strong>Crear una copia del dosier del equipo</strong></a> (lo hace una sola persona y lo comparte con su equipo)</li>
+    <li><a href="https://docs.google.com/document/d/1xAzqFE7JmX1cjCy7jcphTOMCQNhZzJboyvXFwUjrpK8/copy" target="_blank" rel="noopener"><strong>Crear una copia de la bitácora individual</strong></a> (cada persona la suya)</li>
   </ul>
 </div>
 <ol>
-  <li>Abre el enlace correspondiente y confirma que quieres hacer una copia.</li>
-  <li>El documento de equipo solo se comparte entre sus integrantes.</li>
-  <li>Trabaja en el documento durante toda la unidad. No pulses <em>Entregar</em> en Moodle
-  hasta que llegue la sesión indicada.</li>
-  <li>Al terminar, usa <strong>Archivo → Descargar → Documento PDF</strong> y sube ese PDF a
-  Moodle. No cambies los permisos del documento.</li>
+  <li>Entra con tu cuenta del instituto, abre el enlace y pulsa <strong>Hacer una copia</strong>.</li>
+  <li>El dosier se comparte solo con las personas del equipo (botón <strong>Compartir</strong>). El día
+  de la auditoría, también con el equipo que os revisa, como <strong>Comentador</strong>.</li>
+  <li>Cada tabla de la plantilla trae una fila de ejemplo en gris con la botella: sustituidla
+  por la vuestra.</li>
+  <li>Para entregar: <strong>Archivo → Descargar → Documento PDF</strong> y sube ese PDF a la
+  tarea de Moodle. No pulses <em>Entregar</em> antes del día indicado.</li>
 </ol>
-
-<h2>Producto modelo y catálogo</h2>
-<p>Los ejemplos usarán una <strong>botella reutilizable de acero inoxidable</strong>. Tu
-equipo puede escoger una lata de aluminio, un bolígrafo retráctil, una botella reutilizable,
-un casco de bicicleta, un hervidor eléctrico o un taladro portátil. También puede proponer
-otro producto si encuentra información fiable sobre materias primas, proceso, medidas
-críticas, distribución y final de vida.</p>
-
-<div class="marco marco-nota">
-  <p class="marco-titulo">Dos ideas que no debes confundir</p>
-  <p><strong>Ciclo de vida físico:</strong> recorre materias primas, fabricación,
-  distribución, uso y retirada. <strong>Ciclo comercial:</strong> describe cómo evolucionan
-  las ventas desde el lanzamiento hasta el declive. En esta unidad el primero es el eje.</p>
-</div>
 
 <h2>Mapa de la unidad</h2>
-<ol>
-  <li><a href="html/del-problema-al-mercado.html">Del problema al mercado</a></li>
-  <li><a href="html/ciclo-de-vida-fisico.html">Ciclo de vida físico</a></li>
-  <li><a href="html/mejora-continua-y-ciclo-pdca.html">Mejora continua y PDCA</a></li>
-  <li><a href="html/metrologia-y-tolerancias.html">Metrología y tolerancias</a></li>
-  <li><a href="html/normalizacion-y-gestion-de-la-calidad.html">Normalización y gestión de la calidad</a></li>
-  <li><a href="html/produccion-y-control-de-calidad.html">Producción y control de calidad</a></li>
-  <li><a href="html/logistica-mercado-y-auditoria.html">Logística, mercado y auditoría</a></li>
-  <li><a href="html/entrega-y-prueba-individual.html">Entrega y prueba individual</a></li>
-</ol>
+<table class="tabla-datos">
+  <thead><tr><th>Página</th><th>Qué haréis</th><th>Apartado del dosier</th></tr></thead>
+  <tbody>
+    <tr><td><a href="html/del-problema-al-mercado.html">Del problema al mercado</a></td><td>Elegir el producto, decir qué tiene que hacer y de dónde salen los datos</td><td>1 y 2</td></tr>
+    <tr><td><a href="html/ciclo-de-vida-fisico.html">Ciclo de vida físico</a></td><td>Seguir el producto desde la materia prima hasta que se tira</td><td>3</td></tr>
+    <tr><td><a href="html/produccion-y-control-de-calidad.html">Producción y control de calidad</a></td><td>Dibujar cómo se fabrica y decidir qué se comprueba</td><td>4</td></tr>
+    <tr><td><a href="html/metrologia-y-tolerancias.html">Metrología y tolerancias</a></td><td>Medir en el taller y decidir si un lote vale</td><td>5</td></tr>
+    <tr><td><a href="html/mejora-continua-y-ciclo-pdca.html">Mejora continua y ciclo PDCA</a></td><td>Resolver un problema de calidad con datos</td><td>6</td></tr>
+    <tr><td><a href="html/normas-mercado-y-retorno.html">Normas, mercado y retorno</a></td><td>Qué exige la ley, cómo se vende y cómo vuelve</td><td>7 y 8</td></tr>
+    <tr><td><a href="html/auditoria-y-repaso.html">Auditoría y repaso</a></td><td>Revisar el dosier de otro equipo, corregir el vuestro y preparar la prueba</td><td>9</td></tr>
+    <tr><td><a href="html/entrega-y-prueba-individual.html">Entrega y prueba individual</a></td><td>Entregar el dosier y hacer la prueba</td><td>—</td></tr>
+  </tbody>
+</table>
+<p>Páginas de apoyo: <a href="html/expedientes-de-las-empresas.html">Expedientes de las empresas</a> ·
+<a href="html/leer-el-calibre.html">Leer el calibre</a> · <a href="html/glosario.html">Glosario</a>.</p>
 
 </div>
 </div>

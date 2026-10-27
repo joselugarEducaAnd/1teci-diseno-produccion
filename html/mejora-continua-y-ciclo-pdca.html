@@ -2,16 +2,15 @@
 <html lang="es" id="exe-20260805SDA03PAGE03">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="generator" content="eXeLearning v4.0.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mejora continua y ciclo PDCA | Diseño, producción y ciclo de vida</title>
 <link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
 <meta name="description" content="Del diseño al mercado: la vida completa de un producto">
-<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260805SDA03NATIVO","packageTitle":"Diseño, producción y ciclo de vida","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
 <script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
 <script src="../idevices/scrambled-list/scrambled-list.js"></script><link rel="stylesheet" href="../idevices/scrambled-list/scrambled-list.css">
-<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script>
-<script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
 </head>
 <body class="exe-export exe-web-site">
 <script>document.body.className+=" js"</script>
@@ -23,17 +22,23 @@
 </li>
 <li> <a href="../html/ciclo-de-vida-fisico.html" class="no-ch">Ciclo de vida físico</a>
 </li>
-<li class="active"> <a href="../html/mejora-continua-y-ciclo-pdca.html" class="active no-ch">Mejora continua y ciclo PDCA</a>
+<li> <a href="../html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
 </li>
 <li> <a href="../html/metrologia-y-tolerancias.html" class="no-ch">Metrología y tolerancias</a>
 </li>
-<li> <a href="../html/normalizacion-y-gestion-de-la-calidad.html" class="no-ch">Normalización y gestión de la calidad</a>
+<li class="active"> <a href="../html/mejora-continua-y-ciclo-pdca.html" class="active no-ch">Mejora continua y ciclo PDCA</a>
 </li>
-<li> <a href="../html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
+<li> <a href="../html/normas-mercado-y-retorno.html" class="no-ch">Normas, mercado y retorno</a>
 </li>
-<li> <a href="../html/logistica-mercado-y-auditoria.html" class="no-ch">Logística, mercado y auditoría</a>
+<li> <a href="../html/auditoria-y-repaso.html" class="no-ch">Auditoría y repaso</a>
 </li>
 <li> <a href="../html/entrega-y-prueba-individual.html" class="no-ch">Entrega y prueba individual</a>
+</li>
+<li> <a href="../html/expedientes-de-las-empresas.html" class="no-ch">Expedientes de las empresas</a>
+</li>
+<li> <a href="../html/leer-el-calibre.html" class="no-ch">Leer el calibre</a>
+</li>
+<li> <a href="../html/glosario.html" class="no-ch">Glosario</a>
 </li>
 </ul>
 </nav><main id="20260805SDA03PAGE03" class="page"> 
@@ -54,70 +59,91 @@
 .modo{border-left:6px solid;padding:.65rem .8rem;margin:1rem 0;font-weight:700;border-radius:.25rem}
 .modo-individual{border-color:#2c6fb0;background:#eef6fd;color:#174b77}
 .modo-equipo{border-color:#8a4b2a;background:#fbf2ec;color:#66351f}
-.lista-check li{margin-bottom:.35rem}
+.lista-check{list-style:none;padding-left:.2rem}
+.lista-check li{margin-bottom:.4rem}
 .fuente-oficial{font-size:.92em;border-left:4px solid #0e5a63;padding:.55rem .75rem;background:#f6f5fb}
+.hoy{border:2px solid #0e5a63;border-radius:.6rem;padding:.7rem .9rem;margin:0 0 1.2rem;background:#e6f1f2}
+.hoy p{margin:.2rem 0}
+.ejemplo{border-left:6px solid #0e5a63;background:#f4f9f9;padding:.7rem .9rem;margin:1rem 0;border-radius:.25rem}
+.ejemplo-titulo{font-weight:700;color:#084049;margin:0 0 .35rem}
+.palabras dt{font-weight:700;color:#084049;margin-top:.55rem}
+.palabras dd{margin:0 0 .2rem 0}
+.palabras dd em{color:#444}
+.tabla-scroll{max-width:100%;overflow-x:auto}
 </style>
-<h2>Mejorar no es desear: es medir, actuar y volver a comprobar</h2>
-<p>«Mejorar la calidad» no es un plan. Falta decir qué problema existe, cómo se mide, qué
-resultado se espera y qué decisión se tomará después. El ciclo PDCA organiza esa lógica para
-que la mejora sea repetible y no una ocurrencia aislada.</p>
-<p style="text-align:center"><img src="../content/resources/pdca.svg" alt="Ciclo PDCA con planificar, hacer, verificar y actuar" style="max-width:850px;width:100%;height:auto"><a class="ampliar-fig" href="../content/resources/pdca.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 
-<table class="tabla-datos">
-  <thead><tr><th>Fase</th><th>Pregunta</th><th>Evidencia</th></tr></thead>
-  <tbody>
-    <tr><td>Planificar</td><td>¿Qué problema, causa, indicador y objetivo?</td><td>Línea base y plan de acción</td></tr>
-    <tr><td>Hacer</td><td>¿Cómo se prueba el cambio con alcance controlado?</td><td>Registro de la prueba</td></tr>
-    <tr><td>Verificar</td><td>¿Qué muestran los datos frente al objetivo?</td><td>Comparación antes/después</td></tr>
-    <tr><td>Actuar</td><td>¿Se estandariza, corrige o abandona el cambio?</td><td>Nueva regla o nuevo ciclo</td></tr>
-  </tbody>
-</table>
+<div class="hoy"><p><strong>Hoy conseguirás:</strong> convertir un problema de calidad de vuestro producto en un plan de mejora que se pueda comprobar con números.</p></div>
 
-<h2>De una queja a un indicador</h2>
-<p>Queja: «algunas botellas pierden agua». Problema medible: «en la prueba de estanqueidad,
-4 de cada 100 unidades presentan fuga». Indicador: porcentaje de unidades con fuga. Objetivo:
-reducirlo por debajo de un valor acordado sin introducir otro defecto. Acción piloto: revisar
-el montaje de la junta en un lote. Verificación: repetir la misma prueba y comparar.</p>
+<h2>«Mejorar la calidad» no es un plan</h2>
+<p>Una empresa no mejora deseándolo. Necesita saber qué falla, cuánto falla ahora, cuánto
+quiere que falle y cómo va a comprobar si su cambio funciona. El <strong>ciclo PDCA</strong>
+(o de Deming) ordena esos pasos en cuatro fases que se repiten. PDCA son las iniciales en
+inglés de <em>Plan, Do, Check, Act</em>: planificar, hacer, verificar y actuar.</p>
+<p style="text-align:center"><img src="../content/resources/pdca.svg" alt="Ciclo PDCA: planificar, hacer, verificar y actuar" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="../content/resources/pdca.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 
-<div class="marco marco-nota"><p class="marco-titulo">Indicador, objetivo y acción no son lo mismo</p>
-<ul><li><strong>Indicador:</strong> la variable que observas.</li>
-<li><strong>Objetivo:</strong> el resultado que quieres alcanzar.</li>
-<li><strong>Acción:</strong> lo que cambias para intentar alcanzarlo.</li></ul></div>
+<h2>La botella que pierde agua, fase a fase</h2>
+<div class="ejemplo"><p class="ejemplo-titulo">Planificar (P)</p>
+<ul>
+  <li><strong>Problema:</strong> en la prueba de salida, <strong>4 de cada 100</strong> botellas pierden agua.</li>
+  <li><strong>Línea base:</strong> 4 % de botellas con fuga (así estamos hoy).</li>
+  <li><strong>Causa que sospechamos:</strong> la junta del tapón se coloca torcida al montar.</li>
+  <li><strong>Indicador:</strong> porcentaje de botellas que pierden agua en la prueba (%).</li>
+  <li><strong>Objetivo:</strong> bajar del 1 % sin que aparezcan otros fallos.</li>
+  <li><strong>Acción piloto:</strong> un útil (una pieza guía que coloca la junta siempre en su sitio), probado solo en las 500 botellas del turno de mañana.</li>
+</ul></div>
+<div class="ejemplo"><p class="ejemplo-titulo">Hacer (D)</p><p>Se monta con el útil en ese turno y se apunta, botella a botella, si pasa la prueba.</p></div>
+<div class="ejemplo"><p class="ejemplo-titulo">Verificar (C)</p><p>Aquí <em>verificar</em> significa comprobar con datos si el cambio ha funcionado (no es verificar un instrumento). Se calcula el mismo indicador en esas 500 botellas y se compara con la línea base (4 %) y con el objetivo (1 %). Resultado: 3 de 500, es decir, 0,6 %.</p></div>
+<div class="ejemplo"><p class="ejemplo-titulo">Actuar (A)</p>
+<ul>
+  <li>Si baja del 1 %: se usa el útil en todos los turnos y se cambian las instrucciones de montaje.</li>
+  <li>Si mejora pero no llega: se corrige la idea y se repite el ciclo.</li>
+  <li>Si no mejora: la causa era otra; se vuelve a planificar buscando otra causa.</li>
+</ul></div>
 
-<div class="modo modo-equipo">TRABAJO EN EQUIPO · continuad “Dosier del diseño al mercado”</div>
+<div class="marco marco-nota"><p class="marco-titulo">Palabras nuevas</p><dl class="palabras"><dt>Línea base</dt><dd>Cuánto falla ahora, con un número. <em>4 de cada 100.</em></dd><dt>Indicador</dt><dd>Lo que vais a medir para saber si mejora, con su unidad. <em>% de botellas con fuga.</em></dd><dt>Objetivo</dt><dd>El valor del indicador al que queréis llegar. <em>Menos del 1 %.</em></dd><dt>Acción piloto</dt><dd>El cambio que se prueba primero en una parte pequeña de la producción.</dd><dt>Estandarizar</dt><dd>Convertir el cambio que funciona en la forma normal de trabajar.</dd></dl></div>
+<div class="marco marco-nota">
+  <p class="marco-titulo">Indicador, objetivo y acción no son lo mismo</p>
+  <p>Indicador: <em>lo que mido</em>. Objetivo: <em>a dónde quiero llegar</em>. Acción:
+  <em>lo que cambio</em>. Es la confusión más frecuente en este apartado.</p>
+</div>
+
+<div class="modo modo-equipo">TRABAJO EN EQUIPO · apartado 6 del dosier</div>
 <ol>
-  <li>Escoged un problema real del ciclo de vuestro producto.</li>
-  <li>Formulad una línea base, un indicador con unidad y un objetivo verificable.</li>
-  <li>Proponed una acción pequeña que permita probar la hipótesis.</li>
-  <li>Decid qué datos se recogerían y qué haríais en cada resultado posible.</li>
-  <li>Representad las cuatro fases del ciclo y citad la fuente del problema cuando proceda.</li>
+  <li>Partid del <strong>problema de calidad del expediente</strong> o de un fallo que hayáis
+  detectado en los apartados 4 y 5.</li>
+  <li>Rellenad Planificar: problema con número, línea base, causa que sospecháis, indicador con
+  unidad, objetivo y acción piloto.</li>
+  <li>Rellenad Hacer y Verificar: cómo se prueba, qué se apunta y con qué se compara.</li>
+  <li>Rellenad Actuar: qué haréis si llega al objetivo, si mejora poco y si no mejora.</li>
 </ol>
 
-<div class="modo modo-individual">TRABAJO INDIVIDUAL · segunda entrada de “Bitácora individual”</div>
-<p>Explica una decisión que aportaste al plan PDCA, una alternativa que se descartó y la
-razón técnica o documental. La entrada debe señalar dónde aparece la decisión en el dosier.</p>
+<div class="modo modo-individual">TRABAJO INDIVIDUAL · entrada 2 de la bitácora</div>
+<p>Escribe una decisión del plan que propusiste tú, la otra opción que se descartó y por qué
+(con un dato, una medida o una fuente), y en qué apartado del dosier aparece.</p>
+
+<h2>Cómo sabéis que está bien</h2><ul class="lista-check"><li>☐ El problema tiene un número (línea base).</li><li>☐ El indicador tiene unidad y el objetivo es un valor de ese indicador.</li><li>☐ La acción ataca la causa que sospecháis.</li><li>☐ Actuar dice qué hacéis en cada resultado posible.</li></ul>
 
 </div>
 </div>
-</article><article id="block-1785969406032-g7k4uf9y4" class="box">
+</article><article id="block-1793109594003-yxhobudr5" class="box">
 <header class="box-head no-icon">
-<h1 class="box-title">Lista desordenada</h1>
+<h1 class="box-title">Compruébalo</h1>
 <button class="box-toggle box-toggle-on" title="Toggle content">
 <span>Toggle content</span>
 </button></header>
 <div class="box-content">
-<div id="idevice-1785969405815-0y5dt4fg9" class="idevice_node scrambled-list" data-idevice-path="../idevices/scrambled-list/" data-idevice-type="scrambled-list" data-idevice-component-type="json" data-idevice-json-data="{&quot;typeGame&quot;:&quot;ScrambledList&quot;,&quot;instructions&quot;:&quot;&lt;p&gt;Ordena las decisiones de un ciclo de mejora. No basta con cambiar algo: hay que comprobar el resultado y decidir qué hacer después.&lt;/p&gt;&quot;,&quot;textAfter&quot;:&quot;&quot;,&quot;afterElement&quot;:&quot;&quot;,&quot;options&quot;:[&quot;Planificar: definir problema, línea base, indicador, objetivo y acción&quot;,&quot;Hacer: probar la acción con un alcance controlado y registrar lo ocurrido&quot;,&quot;Verificar: comparar los datos obtenidos con la línea base y el objetivo&quot;,&quot;Actuar: estandarizar, corregir o iniciar un nuevo ciclo según el resultado&quot;],&quot;time&quot;:0,&quot;buttonText&quot;:&quot;Comprobar&quot;,&quot;rightText&quot;:&quot;Correcto. PDCA convierte una mejora en un ciclo verificable: planificar, probar, comparar y decidir.&quot;,&quot;wrongText&quot;:&quot;Busca primero dónde se define el problema; después viene la prueba, luego la comparación de datos y finalmente la decisión.&quot;,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;main&quot;:&quot;slidevice-1785969405815-0y5dt4fg9&quot;,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Lista desordenada&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgSubmit&quot;:&quot;Enviar&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para jugar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgTestFailed&quot;:&quot;No has superado la prueba. Inténtalo de nuevo&quot;,&quot;msgRetryAttempts&quot;:&quot;Has cometido %s errores. Te quedan %s intentos. ¿Quieres intentarlo de nuevo?&quot;},&quot;scorerp&quot;:0,&quot;idevice&quot;:&quot;idevice_node&quot;,&quot;showSolutions&quot;:true,&quot;attemptsNumber&quot;:1,&quot;id&quot;:&quot;idevice-1785969405815-0y5dt4fg9&quot;}" data-idevice-template="scrambled-list.html">
-<div class="exe-sortableList" id="slidevice-1785969405815-0y5dt4fg9" scorm=false>
-    <div class="game-evaluation-ids js-hidden" data-id="idevice-1785969405815-0y5dt4fg9" data-evaluationb="false" data-evaluationid=""></div>
-    <div class="exe-sortableList-instructions"><p>Ordena las decisiones de un ciclo de mejora. No basta con cambiar algo: hay que comprobar el resultado y decidir qué hacer después.</p></div>
-    <ul class="exe-sortableList-list"><li data-orig-index="0">Planificar: definir problema, línea base, indicador, objetivo y acción</li>
-<li data-orig-index="1">Hacer: probar la acción con un alcance controlado y registrar lo ocurrido</li>
-<li data-orig-index="2">Verificar: comparar los datos obtenidos con la línea base y el objetivo</li>
-<li data-orig-index="3">Actuar: estandarizar, corregir o iniciar un nuevo ciclo según el resultado</li></ul>
+<div id="idevice-1793109594096-f68cy5qm1" class="idevice_node scrambled-list" data-idevice-path="../idevices/scrambled-list/" data-idevice-type="scrambled-list" data-idevice-component-type="json" data-idevice-json-data="{&quot;typeGame&quot;:&quot;ScrambledList&quot;,&quot;instructions&quot;:&quot;&lt;p&gt;Ordena las cuatro fases del ciclo PDCA.&lt;/p&gt;&quot;,&quot;textAfter&quot;:&quot;&quot;,&quot;afterElement&quot;:&quot;&quot;,&quot;options&quot;:[&quot;Planificar: problema con número, causa, indicador, objetivo y acción&quot;,&quot;Hacer: probar el cambio solo en una parte pequeña y apuntar los resultados&quot;,&quot;Verificar: comparar los datos con la línea base y con el objetivo&quot;,&quot;Actuar: el cambio se queda, se corrige o se busca otra causa&quot;],&quot;time&quot;:0,&quot;buttonText&quot;:&quot;Comprobar&quot;,&quot;rightText&quot;:&quot;¡Correcto! Primero se planifica con números, después se prueba, se comprueba y se decide.&quot;,&quot;wrongText&quot;:&quot;Ese no es el orden. Busca primero dónde se dice qué falla y cuánto.&quot;,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;ba045cdc-0c42-4929-9f1a-60ed64d395a5&quot;,&quot;main&quot;:&quot;slidevice-1785313481782-rk7vxek4h&quot;,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Lista desordenada&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgSubmit&quot;:&quot;Enviar&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para jugar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgTestFailed&quot;:&quot;No has superado la prueba. Inténtalo de nuevo&quot;,&quot;msgRetryAttempts&quot;:&quot;Has cometido %s errores. Te quedan %s intentos. ¿Quieres intentarlo de nuevo?&quot;},&quot;scorerp&quot;:0,&quot;idevice&quot;:&quot;idevice_node&quot;,&quot;showSolutions&quot;:true,&quot;attemptsNumber&quot;:1,&quot;id&quot;:&quot;idevice-1793109594096-f68cy5qm1&quot;}" data-idevice-template="scrambled-list.html">
+<div class="exe-sortableList" id="slidevice-1793109594096-f68cy5qm1" scorm=false>
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1793109594096-f68cy5qm1" data-evaluationb="false" data-evaluationid="ba045cdc-0c42-4929-9f1a-60ed64d395a5"></div>
+    <div class="exe-sortableList-instructions"><p>Ordena las cuatro fases del ciclo PDCA.</p></div>
+    <ul class="exe-sortableList-list"><li data-orig-index="0">Planificar: problema con número, causa, indicador, objetivo y acción</li>
+<li data-orig-index="1">Hacer: probar el cambio solo en una parte pequeña y apuntar los resultados</li>
+<li data-orig-index="2">Verificar: comparar los datos con la línea base y con el objetivo</li>
+<li data-orig-index="3">Actuar: el cambio se queda, se corrige o se busca otra causa</li></ul>
     <div style="display:none">
         <p class="exe-sortableList-buttonText">Comprobar</p>
-        <p class="exe-sortableList-rightText">Correcto. PDCA convierte una mejora en un ciclo verificable: planificar, probar, comparar y decidir.</p>
-        <p class="exe-sortableList-wrongText">Busca primero dónde se define el problema; después viene la prueba, luego la comparación de datos y finalmente la decisión.</p>
+        <p class="exe-sortableList-rightText">¡Correcto! Primero se planifica con números, después se prueba, se comprueba y se decide.</p>
+        <p class="exe-sortableList-wrongText">Ese no es el orden. Busca primero dónde se dice qué falla y cuánto.</p>
     </div>
     <div class="exe-scorm-message"></div>
     
@@ -126,8 +152,8 @@ razón técnica o documental. La entrada debe señalar dónde aparece la decisi�
 </div>
 </article>
 </div></main><div class="nav-buttons">
-<a href="../html/ciclo-de-vida-fisico.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
-<a href="../html/metrologia-y-tolerancias.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+<a href="../html/metrologia-y-tolerancias.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/normas-mercado-y-retorno.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
 </div>
 <footer id="siteFooter" class="siteFooter-empty"><div id="siteFooterContent"></div></footer>
 </div>

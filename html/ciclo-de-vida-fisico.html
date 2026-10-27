@@ -2,16 +2,15 @@
 <html lang="es" id="exe-20260805SDA03PAGE02">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="generator" content="eXeLearning v4.0.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ciclo de vida físico | Diseño, producción y ciclo de vida</title>
 <link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
 <meta name="description" content="Del diseño al mercado: la vida completa de un producto">
-<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260805SDA03NATIVO","packageTitle":"Diseño, producción y ciclo de vida","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
 <script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
 <script src="../idevices/scrambled-list/scrambled-list.js"></script><link rel="stylesheet" href="../idevices/scrambled-list/scrambled-list.css">
-<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script>
-<script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
 </head>
 <body class="exe-export exe-web-site">
 <script>document.body.className+=" js"</script>
@@ -23,17 +22,23 @@
 </li>
 <li class="active"> <a href="../html/ciclo-de-vida-fisico.html" class="active no-ch">Ciclo de vida físico</a>
 </li>
-<li> <a href="../html/mejora-continua-y-ciclo-pdca.html" class="no-ch">Mejora continua y ciclo PDCA</a>
+<li> <a href="../html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
 </li>
 <li> <a href="../html/metrologia-y-tolerancias.html" class="no-ch">Metrología y tolerancias</a>
 </li>
-<li> <a href="../html/normalizacion-y-gestion-de-la-calidad.html" class="no-ch">Normalización y gestión de la calidad</a>
+<li> <a href="../html/mejora-continua-y-ciclo-pdca.html" class="no-ch">Mejora continua y ciclo PDCA</a>
 </li>
-<li> <a href="../html/produccion-y-control-de-calidad.html" class="no-ch">Producción y control de calidad</a>
+<li> <a href="../html/normas-mercado-y-retorno.html" class="no-ch">Normas, mercado y retorno</a>
 </li>
-<li> <a href="../html/logistica-mercado-y-auditoria.html" class="no-ch">Logística, mercado y auditoría</a>
+<li> <a href="../html/auditoria-y-repaso.html" class="no-ch">Auditoría y repaso</a>
 </li>
 <li> <a href="../html/entrega-y-prueba-individual.html" class="no-ch">Entrega y prueba individual</a>
+</li>
+<li> <a href="../html/expedientes-de-las-empresas.html" class="no-ch">Expedientes de las empresas</a>
+</li>
+<li> <a href="../html/leer-el-calibre.html" class="no-ch">Leer el calibre</a>
+</li>
+<li> <a href="../html/glosario.html" class="no-ch">Glosario</a>
 </li>
 </ul>
 </nav><main id="20260805SDA03PAGE02" class="page"> 
@@ -54,77 +59,100 @@
 .modo{border-left:6px solid;padding:.65rem .8rem;margin:1rem 0;font-weight:700;border-radius:.25rem}
 .modo-individual{border-color:#2c6fb0;background:#eef6fd;color:#174b77}
 .modo-equipo{border-color:#8a4b2a;background:#fbf2ec;color:#66351f}
-.lista-check li{margin-bottom:.35rem}
+.lista-check{list-style:none;padding-left:.2rem}
+.lista-check li{margin-bottom:.4rem}
 .fuente-oficial{font-size:.92em;border-left:4px solid #0e5a63;padding:.55rem .75rem;background:#f6f5fb}
+.hoy{border:2px solid #0e5a63;border-radius:.6rem;padding:.7rem .9rem;margin:0 0 1.2rem;background:#e6f1f2}
+.hoy p{margin:.2rem 0}
+.ejemplo{border-left:6px solid #0e5a63;background:#f4f9f9;padding:.7rem .9rem;margin:1rem 0;border-radius:.25rem}
+.ejemplo-titulo{font-weight:700;color:#084049;margin:0 0 .35rem}
+.palabras dt{font-weight:700;color:#084049;margin-top:.55rem}
+.palabras dd{margin:0 0 .2rem 0}
+.palabras dd em{color:#444}
+.tabla-scroll{max-width:100%;overflow-x:auto}
 </style>
-<h2>El producto es un flujo de materia, energía e información</h2>
-<p>El ciclo de vida físico comienza antes de fabricar y continúa después del uso. Para
-entenderlo hay que seguir materiales, operaciones, transportes, consumos, reparaciones y
-residuos. Una flecha circular no significa que todo se recicle: significa que debemos
-preguntar qué vuelve realmente al sistema y qué se pierde.</p>
-<p style="text-align:center"><img src="../content/resources/ciclo_vida.svg" alt="Ciclo de vida con materias primas, producción, distribución, uso y final de vida" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="../content/resources/ciclo_vida.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 
-<h2>Las cinco etapas</h2>
+<div class="hoy"><p><strong>Hoy conseguirás:</strong> dibujar el recorrido completo de vuestro producto, desde la materia prima hasta que se tira, y decidir cuáles son sus dos impactos más importantes.</p></div>
+
+<h2>Seguir el producto desde la mina hasta el contenedor</h2>
+<p>El <strong>ciclo de vida físico</strong> es lo que le pasa al producto como objeto: de
+dónde sale su material, cómo se fabrica, cómo viaja, cómo se usa y qué pasa al tirarlo. Tiene
+cinco etapas.</p>
+<p style="text-align:center"><img src="../content/resources/ciclo_vida.svg" alt="Ciclo de vida físico: materias primas, producción, distribución, uso y mantenimiento, final de vida" style="max-width:900px;width:100%;height:auto"><a class="ampliar-fig" href="../content/resources/ciclo_vida.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
+<div class="marco marco-nota">
+  <p class="marco-titulo">No lo confundas con el ciclo comercial</p>
+  <p>El <strong>ciclo comercial</strong> habla de las ventas: el producto se lanza, se vende
+  cada vez más, se estanca y deja de venderse. En esta unidad trabajamos el
+  <strong>físico</strong>.</p>
+</div>
+
+<p>En cada etapa algo <strong>entra</strong> (material, energía, agua) y algo
+<strong>sale</strong> (el producto, residuos, emisiones). Lo que sale y daña al ambiente o a
+las personas es un <strong>impacto</strong>.</p>
+<div class="ejemplo"><p class="ejemplo-titulo">El ciclo de la botella</p>
 <table class="tabla-datos">
-  <thead><tr><th>Etapa</th><th>Preguntas técnicas</th><th>Impactos posibles</th></tr></thead>
+  <thead><tr><th>Etapa</th><th>Entra</th><th>Sale</th><th>Impacto principal</th></tr></thead>
   <tbody>
-    <tr><td>Materias primas</td><td>¿Qué materiales? ¿De dónde proceden? ¿Se separan?</td><td>Extracción, agua, energía, pérdida de recursos</td></tr>
-    <tr><td>Producción</td><td>¿Qué operaciones transforman y unen? ¿Qué mermas aparecen?</td><td>Energía, emisiones, rechazos, riesgos</td></tr>
-    <tr><td>Distribución</td><td>¿Cómo se embala, almacena y transporta?</td><td>Volumen, masa, distancia, daños</td></tr>
-    <tr><td>Uso</td><td>¿Consume energía o consumibles? ¿Se repara y mantiene?</td><td>Consumo, duración, sustituciones</td></tr>
-    <tr><td>Final de vida</td><td>¿Se reutiliza, repara, remanufactura o recicla?</td><td>Mezcla de materiales, residuos, recuperación</td></tr>
+    <tr><td>Materias primas</td><td>Mineral de hierro, cromo y níquel; petróleo para el tapón</td><td>Tubo de acero inoxidable, bolitas de plástico</td><td>Minería y mucha energía para fundir el acero</td></tr>
+    <tr><td>Producción</td><td>Tubo de acero, electricidad, pintura</td><td>Botellas, recortes de acero, botellas rechazadas</td><td>Consumo de energía; recortes que hay que reciclar</td></tr>
+    <tr><td>Distribución</td><td>Cajas de cartón, gasóleo del camión</td><td>Botellas en la tienda</td><td>Emisiones del transporte</td></tr>
+    <tr><td>Uso</td><td>Agua y jabón para lavarla</td><td>Agua sucia</td><td>Agua de cada lavado (poca, pero durante años)</td></tr>
+    <tr><td>Final de vida</td><td>Botella usada</td><td>Acero que se recicla; tapón y junta que se tiran</td><td>Si va a la basura normal, el acero no se recupera</td></tr>
   </tbody>
-</table>
+</table></div>
+<p>No hace falta saber cifras exactas. Si no hay un dato en el expediente ni en una fuente,
+<strong>no lo inventéis</strong>: escribid qué dato faltaría («no sabemos cuánta energía
+gasta el pulido»).</p>
 
-<div class="marco marco-teoria"><p class="marco-titulo">Proceso productivo: verbos y decisiones</p>
-<p>Un esquema útil no dice solo «fábrica». Usa verbos: cortar, conformar, mecanizar, moldear,
-tratar, limpiar, unir, montar, comprobar y embalar. Entre operaciones coloca entradas,
-salidas y controles. Si no sabes una operación, indícala como pregunta y busca evidencia.</p></div>
-
-<h2>Ejemplo: botella reutilizable</h2>
-<p>Un modelo simplificado puede incluir acero y polímeros; conformado del cuerpo; fabricación
-de tapa y junta; limpieza; unión o montaje; prueba de fugas; acabado; embalaje; transporte;
-uso y lavado; reparación o sustitución de piezas; separación de materiales al final. El
-modelo exacto depende del diseño elegido y debe contrastarse.</p>
-
-<h2>Priorizar impactos</h2>
-<p>No todos los impactos son igual de importantes. Prioriza con tres criterios: magnitud,
-frecuencia y capacidad de mejora. Explica también la incertidumbre: si no hay un dato fiable,
-no inventes una cifra; describe qué dato necesitarías.</p>
-
-<div class="modo modo-equipo">TRABAJO EN EQUIPO · continuad “Dosier del diseño al mercado”</div>
+<h2>¿Qué impacto importa más?</h2>
+<p>No todos los impactos merecen el mismo esfuerzo. Para elegir, haceos tres preguntas:</p>
 <ol>
-  <li>Dibujad el ciclo físico completo y señalad las entradas y salidas más importantes.</li>
-  <li>Añadid un esquema del proceso productivo con verbos de operación.</li>
-  <li>Identificad al menos un impacto por etapa.</li>
-  <li>Elegid dos impactos prioritarios y justificadlos con magnitud, frecuencia y capacidad
-  de mejora.</li>
-  <li>Anotad qué partes están respaldadas y qué dudas quedan abiertas.</li>
+  <li><strong>¿Cuánto daño hace?</strong> No es lo mismo un poco de agua que una tonelada de CO₂.</li>
+  <li><strong>¿Cada cuánto pasa?</strong> Una vez en la vida del producto o cada día.</li>
+  <li><strong>¿Podemos hacer algo?</strong> Si la empresa puede reducirlo, merece la pena.</li>
 </ol>
-<p>No entreguéis todavía el dosier: se completa hasta la séptima sesión.</p>
+<div class="ejemplo"><p class="ejemplo-titulo">Dos impactos prioritarios de la botella</p>
+<p><strong>1. Fundir el acero.</strong> Creemos que hace mucho daño (fundir acero gasta mucha
+energía; no tenemos la cifra exacta), pasa una vez por botella, y la empresa puede reducirlo comprando acero con parte reciclado.</p>
+<p><strong>2. La botella acaba en la basura normal.</strong> Daño medio (se pierde todo el
+acero), pasa con muchas botellas, y la empresa puede ayudar: poner en la etiqueta que el
+cuerpo va al punto limpio.</p></div>
+
+<div class="marco marco-nota"><p class="marco-titulo">Palabras nuevas</p><dl class="palabras"><dt>Ciclo de vida físico</dt><dd>Lo que le pasa al producto como objeto, de la materia prima a la basura o al reciclaje.</dd><dt>Materia prima</dt><dd>El material de la naturaleza del que sale el producto. <em>Mineral de hierro.</em></dd><dt>Impacto</dt><dd>Un efecto de una etapa sobre el ambiente o las personas. <em>Emisiones del camión.</em></dd><dt>Final de vida</dt><dd>Lo que pasa cuando el producto ya no se usa: reutilizar, reparar, reciclar o tirar.</dd><dt>Reciclar</dt><dd>Convertir el material del producto viejo en materia prima para otro nuevo.</dd></dl></div>
+
+<div class="modo modo-equipo">TRABAJO EN EQUIPO · apartado 3 del dosier</div>
+<ol>
+  <li>Dibujad el ciclo de vuestro producto con las cinco etapas (a mano y foto, o con
+  formas en el documento).</li>
+  <li>Completad la tabla de la plantilla: qué entra, qué sale y el impacto principal de cada
+  etapa. Los datos salen del expediente.</li>
+  <li>Elegid los dos impactos más importantes y responded a las tres preguntas para cada uno.</li>
+</ol>
+
+<h2>Cómo sabéis que está bien</h2><ul class="lista-check"><li>☐ Están las cinco etapas, también el uso y el final de vida.</li><li>☐ Cada etapa tiene algo que entra y algo que sale.</li><li>☐ Si la flecha vuelve al principio, decís qué vuelve de verdad y cómo.</li><li>☐ Cada impacto prioritario responde a las tres preguntas.</li></ul>
 
 </div>
 </div>
-</article><article id="block-1785969405871-jweyf6ohp" class="box">
+</article><article id="block-1793109593835-dnf05bkru" class="box">
 <header class="box-head no-icon">
-<h1 class="box-title">Lista desordenada</h1>
+<h1 class="box-title">Compruébalo</h1>
 <button class="box-toggle box-toggle-on" title="Toggle content">
 <span>Toggle content</span>
 </button></header>
 <div class="box-content">
-<div id="idevice-1785969405853-0g64lhv1a" class="idevice_node scrambled-list" data-idevice-path="../idevices/scrambled-list/" data-idevice-type="scrambled-list" data-idevice-component-type="json" data-idevice-json-data="{&quot;typeGame&quot;:&quot;ScrambledList&quot;,&quot;instructions&quot;:&quot;&lt;p&gt;Ordena el primer recorrido del ciclo físico de un producto. Después pueden existir retornos para reparar, reutilizar o recuperar materiales.&lt;/p&gt;&quot;,&quot;textAfter&quot;:&quot;&quot;,&quot;afterElement&quot;:&quot;&quot;,&quot;options&quot;:[&quot;Obtener y preparar las materias primas&quot;,&quot;Fabricar componentes, montar y controlar el producto&quot;,&quot;Embalar, almacenar y distribuir&quot;,&quot;Usar, mantener y reparar cuando sea posible&quot;,&quot;Recoger, reutilizar, remanufacturar, reciclar o gestionar el residuo&quot;],&quot;time&quot;:0,&quot;buttonText&quot;:&quot;Comprobar&quot;,&quot;rightText&quot;:&quot;Correcto. El recorrido básico avanza desde los recursos hasta el final de vida; los retornos aparecen cuando existe una vía real de recuperación.&quot;,&quot;wrongText&quot;:&quot;Revisa qué debe existir antes de fabricar, qué ocurre antes del uso y qué opciones quedan después de utilizar el producto.&quot;,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;main&quot;:&quot;slidevice-1785969405853-0g64lhv1a&quot;,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Lista desordenada&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgSubmit&quot;:&quot;Enviar&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para jugar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgTestFailed&quot;:&quot;No has superado la prueba. Inténtalo de nuevo&quot;,&quot;msgRetryAttempts&quot;:&quot;Has cometido %s errores. Te quedan %s intentos. ¿Quieres intentarlo de nuevo?&quot;},&quot;scorerp&quot;:0,&quot;idevice&quot;:&quot;idevice_node&quot;,&quot;showSolutions&quot;:true,&quot;attemptsNumber&quot;:1,&quot;id&quot;:&quot;idevice-1785969405853-0g64lhv1a&quot;}" data-idevice-template="scrambled-list.html">
-<div class="exe-sortableList" id="slidevice-1785969405853-0g64lhv1a" scorm=false>
-    <div class="game-evaluation-ids js-hidden" data-id="idevice-1785969405853-0g64lhv1a" data-evaluationb="false" data-evaluationid=""></div>
-    <div class="exe-sortableList-instructions"><p>Ordena el primer recorrido del ciclo físico de un producto. Después pueden existir retornos para reparar, reutilizar o recuperar materiales.</p></div>
-    <ul class="exe-sortableList-list"><li data-orig-index="0">Obtener y preparar las materias primas</li>
-<li data-orig-index="1">Fabricar componentes, montar y controlar el producto</li>
-<li data-orig-index="2">Embalar, almacenar y distribuir</li>
-<li data-orig-index="3">Usar, mantener y reparar cuando sea posible</li>
-<li data-orig-index="4">Recoger, reutilizar, remanufacturar, reciclar o gestionar el residuo</li></ul>
+<div id="idevice-1793109593329-5fnwhml00" class="idevice_node scrambled-list" data-idevice-path="../idevices/scrambled-list/" data-idevice-type="scrambled-list" data-idevice-component-type="json" data-idevice-json-data="{&quot;typeGame&quot;:&quot;ScrambledList&quot;,&quot;instructions&quot;:&quot;&lt;p&gt;Ordena las cinco etapas de la vida de un producto, de la primera a la última.&lt;/p&gt;&quot;,&quot;textAfter&quot;:&quot;&quot;,&quot;afterElement&quot;:&quot;&quot;,&quot;options&quot;:[&quot;Sacar y preparar las materias primas&quot;,&quot;Fabricar, montar y comprobar&quot;,&quot;Embalar y distribuir&quot;,&quot;Usar y mantener&quot;,&quot;Final de vida: reutilizar, reparar, reciclar o tirar&quot;],&quot;time&quot;:0,&quot;buttonText&quot;:&quot;Comprobar&quot;,&quot;rightText&quot;:&quot;¡Correcto! Primero se saca el material; al final se decide si se reutiliza, se repara, se recicla o se tira.&quot;,&quot;wrongText&quot;:&quot;Ese no es el orden. Piensa qué hace falta antes de fabricar y qué pasa después de usar el producto.&quot;,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;ba045cdc-0c42-4929-9f1a-60ed64d395a5&quot;,&quot;main&quot;:&quot;slidevice-1785313481782-rk7vxek4h&quot;,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Lista desordenada&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgSubmit&quot;:&quot;Enviar&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para jugar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgTestFailed&quot;:&quot;No has superado la prueba. Inténtalo de nuevo&quot;,&quot;msgRetryAttempts&quot;:&quot;Has cometido %s errores. Te quedan %s intentos. ¿Quieres intentarlo de nuevo?&quot;},&quot;scorerp&quot;:0,&quot;idevice&quot;:&quot;idevice_node&quot;,&quot;showSolutions&quot;:true,&quot;attemptsNumber&quot;:1,&quot;id&quot;:&quot;idevice-1793109593329-5fnwhml00&quot;}" data-idevice-template="scrambled-list.html">
+<div class="exe-sortableList" id="slidevice-1793109593329-5fnwhml00" scorm=false>
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1793109593329-5fnwhml00" data-evaluationb="false" data-evaluationid="ba045cdc-0c42-4929-9f1a-60ed64d395a5"></div>
+    <div class="exe-sortableList-instructions"><p>Ordena las cinco etapas de la vida de un producto, de la primera a la última.</p></div>
+    <ul class="exe-sortableList-list"><li data-orig-index="0">Sacar y preparar las materias primas</li>
+<li data-orig-index="1">Fabricar, montar y comprobar</li>
+<li data-orig-index="2">Embalar y distribuir</li>
+<li data-orig-index="3">Usar y mantener</li>
+<li data-orig-index="4">Final de vida: reutilizar, reparar, reciclar o tirar</li></ul>
     <div style="display:none">
         <p class="exe-sortableList-buttonText">Comprobar</p>
-        <p class="exe-sortableList-rightText">Correcto. El recorrido básico avanza desde los recursos hasta el final de vida; los retornos aparecen cuando existe una vía real de recuperación.</p>
-        <p class="exe-sortableList-wrongText">Revisa qué debe existir antes de fabricar, qué ocurre antes del uso y qué opciones quedan después de utilizar el producto.</p>
+        <p class="exe-sortableList-rightText">¡Correcto! Primero se saca el material; al final se decide si se reutiliza, se repara, se recicla o se tira.</p>
+        <p class="exe-sortableList-wrongText">Ese no es el orden. Piensa qué hace falta antes de fabricar y qué pasa después de usar el producto.</p>
     </div>
     <div class="exe-scorm-message"></div>
     
@@ -134,7 +162,7 @@ no inventes una cifra; describe qué dato necesitarías.</p>
 </article>
 </div></main><div class="nav-buttons">
 <a href="../html/del-problema-al-mercado.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
-<a href="../html/mejora-continua-y-ciclo-pdca.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+<a href="../html/produccion-y-control-de-calidad.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
 </div>
 <footer id="siteFooter" class="siteFooter-empty"><div id="siteFooterContent"></div></footer>
 </div>
