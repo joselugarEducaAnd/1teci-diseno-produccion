@@ -91,3 +91,40 @@
   });
   if (document.readyState === 'complete') marcar();
 })();
+
+/* --------------------------------------------------------------------------
+   2026-11-01 · DOCA-168 — botón «Proyectar» del recuadro «Cómo se te evalúa»
+   - Pone el .csee a pantalla completa (el CSS escala la letra con la ventana:
+     legible a 1920×1080). Solo en el export y solo si el navegador lo permite.
+   - El botón no está en el .elpx: lo añade este script al cargar.
+   -------------------------------------------------------------------------- */
+(function () {
+  function esExport() {
+    return !!(document.body && document.body.classList.contains('exe-export'));
+  }
+  function montar() {
+    if (!esExport()) return;
+    var cajas = document.querySelectorAll('.csee');
+    Array.prototype.forEach.call(cajas, function (caja) {
+      var cab = caja.querySelector('.csee-h');
+      if (!cab || cab.querySelector('.csee-proj') || !caja.requestFullscreen) return;
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'csee-proj';
+      b.textContent = 'Proyectar';
+      b.addEventListener('click', function () {
+        if (document.fullscreenElement) { document.exitFullscreen(); return; }
+        caja.requestFullscreen().catch(function () {});
+      });
+      document.addEventListener('fullscreenchange', function () {
+        b.textContent = document.fullscreenElement === caja ? 'Salir' : 'Proyectar';
+      });
+      cab.appendChild(b);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', montar);
+  } else {
+    montar();
+  }
+})();

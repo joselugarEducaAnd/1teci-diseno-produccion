@@ -483,3 +483,104 @@ button.toggler:hover, button.toggler:focus,
     outline-offset: 2px;
   }
 }
+
+/* ==========================================================================
+   2026-11-01 · DOCA-168 — recuadro «Cómo se te evalúa» (.csee-*)
+   Lo escribe `recuadro_evaluacion.py` en el primer bloque de la primera página
+   del libro, entre <!-- csee:inicio … --> y <!-- csee:fin -->, desde el sda.yaml.
+   Spec: 02_TRABAJO/proyectos_claude/spec_recuadro_evaluacion_sda.md.
+   - EXCEPCIÓN a la capa 1 (documentada en README_estilo.md): los 8 colores de
+     familia de prueba (Examen #9f1239, Prueba corta #c2410c, Práctica #0f766e,
+     Tarea #1d4ed8, Proyecto #6d28d9, Informe/cuaderno #a16207, Exposición
+     #4d7c0f, Observación #475569) viven SOLO dentro de .csee y llegan en el
+     style de cada dato. No reutilizan .bloque-* ni --sem-*.
+   - Todo cuelga de `.csee .csee-x` (0,2,0): gana a `.exe-content h2/h3`
+     (0,1,1) del tema y a las reglas sueltas (`p,li{…}`, `h2{…}`) del <style>
+     de cada libro. El chrome de la unidad sale de --chrome/--chrome-tinte/
+     --chrome-linea, como el resto del libro.
+   - Proyectar: zzz-majuelo.js añade el botón en el export; a pantalla completa
+     la letra escala con la ventana (legible a 1920×1080).
+   ========================================================================== */
+.csee { --csee-tx: #24262e; --csee-tx2: #5a5f6b; --csee-ln: #e4e6eb;
+  font-family: var(--maj-fuente, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif);
+  color: var(--csee-tx); background: #fff; border: 1.5px solid var(--chrome-linea);
+  border-radius: 14px; overflow: hidden; font-size: clamp(14px, .55vw + 10px, 17px);
+  line-height: 1.4; margin: 0 0 1.6em; max-width: none; }
+.csee * { box-sizing: border-box; }
+.csee p, .csee ul, .csee ol, .csee li, .csee h2, .csee h3 { line-height: 1.4; max-width: none; }
+.csee .csee-h { background: var(--chrome); color: #fff; display: flex; flex-wrap: wrap;
+  gap: .8em 1.6em; align-items: flex-end; justify-content: space-between; padding: 1.1em 1.4em; }
+.csee .csee-eye { margin: 0 0 .25em; font-size: .76em; font-weight: 700; letter-spacing: .11em;
+  text-transform: uppercase; opacity: .82; color: #fff; }
+.csee .csee-t { margin: 0; font-size: 1.65em; font-weight: 800; line-height: 1.15;
+  letter-spacing: -.01em; text-wrap: balance; color: #fff; border: 0; padding: 0; }
+.csee .csee-kpi { list-style: none; margin: 0; padding: 0; display: flex; gap: .5em; }
+.csee .csee-kpi li { background: rgba(255,255,255,.13); border-radius: 9px; padding: .35em .75em;
+  margin: 0; font-size: .8em; line-height: 1.2; text-align: center; color: #fff; }
+.csee .csee-kpi b { display: block; font-size: 1.75em; font-weight: 800; font-variant-numeric: tabular-nums; }
+.csee .csee-proj { font: inherit; font-size: .8em; font-weight: 700; color: var(--chrome);
+  background: #fff; border: 0; border-radius: 9px; padding: .55em 1em; cursor: pointer; align-self: center; }
+.csee .csee-proj:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.csee .csee-b { padding: 1em 1.4em 1.15em; border-top: 1px solid var(--chrome-linea); }
+.csee .csee-st { margin: 0 0 .55em; font-size: .8em; font-weight: 800; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--chrome); border: 0; padding: 0; }
+.csee .csee-crit { list-style: none; margin: 0; padding: 0; }
+.csee .csee-crit > li { display: grid; grid-template-columns: 3.4em minmax(0,1fr) minmax(13em,1.05fr);
+  gap: .4em 1em; align-items: center; margin: 0; padding: .6em 0; border-bottom: 1px dashed var(--csee-ln); }
+.csee .csee-crit > li:last-child { border-bottom: 0; }
+.csee .csee-cod { background: var(--chrome-tinte); color: var(--chrome); font-weight: 800; font-size: 1.2em;
+  border-radius: 9px; text-align: center; padding: .28em 0; font-variant-numeric: tabular-nums; }
+.csee .csee-txtw { min-width: 0; }
+.csee .csee-txt { margin: 0; font-size: 1.02em; cursor: help; }
+.csee .csee-curso { margin: .35em 0 0; display: flex; align-items: center; gap: .6em; font-size: .8em; color: var(--csee-tx2); }
+.csee .csee-curso b { color: var(--chrome); }
+.csee .csee-tira { flex: none; display: flex; gap: 2px; width: 7.5em; height: .6em; border-radius: 3px; overflow: hidden; }
+.csee .csee-tira i { background: var(--chrome-linea); min-width: 3px; }
+.csee .csee-tira i.on { background: var(--chrome); }
+.csee .csee-colh { display: grid; grid-template-columns: 3.4em minmax(0,1fr) minmax(13em,1.05fr); gap: 0 1em; }
+.csee .csee-colh span { font-size: .72em; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--csee-tx2); }
+.csee .csee-colh span:first-child { grid-column: 1 / 3; }
+.csee .csee-peso { min-width: 0; }
+.csee .csee-bar { display: flex; gap: 3px; height: 2.25em; border-radius: 9px; overflow: hidden; }
+.csee .csee-bar span { text-shadow: 0 0 3px rgba(0,0,0,.35); display: flex; align-items: center; justify-content: center;
+  min-width: 2.6em; padding: 0 .45em; color: #fff; font-size: .84em; font-weight: 800; white-space: nowrap;
+  overflow: hidden; font-variant-numeric: tabular-nums; }
+.csee .csee-leg { list-style: none; margin: .4em 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25em 1.1em; font-size: .88em; }
+.csee .csee-leg li { display: flex; align-items: center; gap: .4em; margin: 0; padding: 0; border: 0; }
+.csee .csee-leg i { flex: none; width: .8em; height: .8em; border-radius: 3px; }
+.csee .csee-scroll { overflow-x: auto; }
+.csee .csee-g { display: grid; row-gap: .55em; align-items: center; }
+.csee .csee-gs { font-size: .72em; color: var(--csee-tx2); text-align: center; font-variant-numeric: tabular-nums; }
+.csee .csee-gl { grid-column: 1; display: flex; gap: .6em; align-items: flex-start; padding-right: .8em; }
+.csee .csee-gl b { display: block; font-size: .98em; line-height: 1.2; }
+.csee .csee-dot { flex: none; width: .85em; height: .85em; border-radius: 3px; margin-top: .22em; }
+.csee .csee-gl small { display: flex; align-items: center; gap: .3em; color: var(--csee-tx2); font-size: .8em; margin-top: .1em; }
+.csee .csee-gl svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+.csee .csee-chips { display: flex; flex-wrap: wrap; gap: .25em; margin-top: .3em; }
+.csee .csee-chips span { font-size: .72em; font-weight: 800; color: var(--chrome); border: 1px solid var(--chrome-linea);
+  background: var(--chrome-tinte); border-radius: 999px; padding: 0 .55em; font-variant-numeric: tabular-nums; }
+.csee .csee-gr { display: grid; align-items: center; height: 2.4em; border-radius: 8px; }
+.csee .csee-span { grid-row: 1; height: .75em; border-radius: 999px; }
+.csee .csee-fin { grid-row: 1; justify-self: center; z-index: 1; color: #fff; font-size: .74em; font-weight: 800;
+  padding: .28em .45em; border-radius: 6px; font-variant-numeric: tabular-nums; box-shadow: 0 0 0 2px #fff; }
+.csee .csee-ley { margin: .7em 0 0; font-size: .76em; color: var(--csee-tx2); display: flex; flex-wrap: wrap; align-items: center; gap: .4em; }
+.csee .csee-ley .l1 { display: inline-block; width: 2em; height: .6em; border-radius: 999px; background: #d9dce3; }
+.csee .csee-ley .l2 { display: inline-grid; place-items: center; margin-left: 1em; background: var(--csee-tx2); color: #fff;
+  border-radius: 4px; font-size: .85em; font-weight: 800; padding: 0 .35em; }
+.csee .csee-f { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .6em 1.4em; padding: .95em 1.4em;
+  background: var(--chrome-tinte); border-top: 1px solid var(--chrome-linea); }
+.csee .csee-f p { margin: 0; font-size: .88em; color: var(--csee-tx); }
+.csee .csee-f b { color: var(--chrome); }
+.csee:fullscreen { font-size: clamp(16px, 1.32vw, 28px); border-radius: 0; border: 0; overflow: auto; }
+.csee::backdrop { background: #fff; }
+@media (max-width: 720px) {
+  .csee .csee-crit > li { grid-template-columns: 3em minmax(0,1fr); }
+  .csee .csee-peso { grid-column: 1 / -1; }
+  .csee .csee-colh { display: none; }
+  .csee .csee-f { grid-template-columns: 1fr; }
+  .csee .csee-kpi { width: 100%; }
+}
+@media print {
+  .csee { break-inside: avoid; }
+  .csee .csee-proj { display: none; }
+}
